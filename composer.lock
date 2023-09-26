@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9dd3328e432d79bd4f32cee88525868",
+    "content-hash": "cf6b9399305fab93dec84c3da69b8594",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -83,6 +83,58 @@
             },
             "type": "metapackage",
             "description": "Metapackage contains references to Adobe Commerce Extensions"
+        },
+        {
+            "name": "antonevers/module-3rdparty",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/3rdparty/antonevers/module-3rdparty",
+                "reference": "b3fa6ca0a7df738a01cf4d83b541aa2cde38935d"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "AntonEvers\\ThirdParty\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "antonevers/module-gra",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/gra/antonevers/module-gra",
+                "reference": "c353f01598e3b99cc32a06667defde9449314b58"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "AntonEvers\\Gra\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "antonevers/module-local",
@@ -31140,6 +31192,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "antonevers/module-3rdparty": 20,
+        "antonevers/module-gra": 20,
         "antonevers/module-local": 20
     },
     "prefer-stable": true,

@@ -17,6 +17,8 @@
     },
     "version": "2.4.6-p2",
     "require": {
+        "antonevers/module-3rdparty": "@dev",
+        "antonevers/module-gra": "@dev",
         "antonevers/module-local": "@dev",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
         "magento/composer-root-update-plugin": "~2.0",
