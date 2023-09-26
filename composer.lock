@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d4acb8d6ee6ea6076c801feda1b6321",
+    "content-hash": "c9dd3328e432d79bd4f32cee88525868",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -83,6 +83,32 @@
             },
             "type": "metapackage",
             "description": "Metapackage contains references to Adobe Commerce Extensions"
+        },
+        {
+            "name": "antonevers/module-local",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/local/antonevers/module-local",
+                "reference": "7ae62546d61d0ce3d04606c280830231e1ca323c"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "AntonEvers\\Local\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "astock/stock-api-libphp",
@@ -31113,7 +31139,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "antonevers/module-local": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
